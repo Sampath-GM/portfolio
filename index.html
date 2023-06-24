@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <h2 class="icon">SAM</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+       
+<div class="header-text">
+    <p>Java Developer</p>
+    <h1>Hi, I'm <span>Sampath</span> <br> From Shivamogga</h1>
+</div>
+        </div>
+    </div>
+    <hr>
+                       <!-- ------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./Images/sam.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1><br>
+                <p>I am a skilled Java developer with a passion for creating efficient and scalable software
+                solutions. With a deep understanding of object-oriented programming and Java frameworks,
+                I have successfully developed robust applications and integrated databases to deliver exceptional
+                 user experiences. My expertise in troubleshooting and debugging allows me to ensure the stability
+                 and reliability of the software I develop. I thrive in collaborative environments and have 
+                 experience working within Agile methodologies, delivering high-quality code within tight deadlines.
+                 Committed to continuous learning, I stay updated with the latest advancements in Java to deliver 
+                 cutting-edge solutions that drive innovation.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Andriod apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2019-2020</span><br>UI/UX Design Training at TCS</li>
+                            <li><span>2020-2022</span><br>Software coordinator at NarayanaNethralaya</li>
+                            <li><span>2023-2024</span><br>Intenship at Google Flutter</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2025</span><br>BE from Alva's Institute of Engineering and Technology</li>
+                            <li><span>2022</span><br>Front-end Developer at NarayanaNethralaya</li>
+                            <li><span>2019</span><br>Diploma in computer science & engg</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+</body>
+</html>
