@@ -9,9 +9,10 @@ body{
  background-color: #080808;
 } 
 
-/* #header{
+ #header{
     width: 100%;
-    height: 100vh;
+    height: 60vh;
+ }
     /* background-image: url(./Images/student-849825_1280.jpg); */
     /* background-size:cover;
     background-position:inherit;
